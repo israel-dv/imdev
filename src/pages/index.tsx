@@ -1,28 +1,38 @@
 import Image from 'next/image'
 
+import profilePic from '../../public/intro-image.png'
+
 const NAME = 'ISRAEL MORENO'
-const HI = "Hi ✌🏼! I'm "
-const DESCRIPTION = 'Frontend Engineer 👨🏻‍💻 | Cyclist 🚴🏼‍♂️ | Autodidact 📚'
+const HI = 'Hola ✌🏼! Soy '
+const DESCRIPTION = 'Frontend Engineer 👨🏻‍💻 | Entusiasta 📚'
 
 export default function Home() {
   return (
-    <>
-      <div className="w-full flex h-full items-center justify-center">
-        <div className="flex flex-col w-full">
-          <span className="text-2xl font-varela-round">{HI}</span>
-          <h1 className="text-8xl font-days-one font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-100 to-blue-700">
+    <div className="w-full h-full flex">
+      <div className="w-full flex items-center justify-center phone:flex-col-reverse lg:flex-row">
+        <div className="flex flex-col w-95 items-center lg:items-start">
+          <span className="phone:text-xl lg:text-3xl font-outfit">{HI}</span>
+          <h1 className="font-lilita-one bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 phone:text-4xl lg:text-8xl">
             {NAME}
           </h1>
           <div className="flex">
-            <h2 className="text-3xl font-varela-round typing">{DESCRIPTION}</h2>
-            {/* <div className=" flex-grow w-full bg-blue-200">some</div> */}
+            <h2 className="font-outfit typing phone:text-xl lg:text-3xl">
+              {DESCRIPTION}
+            </h2>
           </div>
         </div>
-        <div className="w-full flex justify-center">
-          <Image src={''} alt="israel moreno logo" />
+        <div className="w-full flex justify-center items-center">
+          <div className="phone:w-56 phone:h-56 w-96 h-96">
+            <Image
+              src={profilePic}
+              width={400}
+              height={400}
+              alt="israel moreno logo"
+            />
+          </div>
         </div>
       </div>
-      <div>
+      {/* <div className="bg-50vw">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
           deserunt provident magnam nihil tenetur repudiandae amet ratione
@@ -40,7 +50,7 @@ export default function Home() {
         <div>React Native</div>
         <div>Tailwind CSS</div>
         <div>GraphQL</div>
-      </div>
-    </>
+      </div> */}
+    </div>
   )
 }

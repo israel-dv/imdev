@@ -8,14 +8,17 @@ type LayoutProps = {
   children: React.ReactNode
 }
 
-const daysOneFont = localFont({
-  src: '../../../public/fonts/DaysOne-Regular.ttf',
-  variable: '--days-one'
+const outfit = localFont({
+  src: [
+    { path: '../../../public/fonts/Outfit-Black.ttf', weight: '700' },
+    { path: '../../../public/fonts/Outfit-Regular.ttf', weight: '400' }
+  ],
+  variable: '---outfit'
 })
 
-const varelaRound = localFont({
-  src: '../../../public/fonts/VarelaRound-Regular.ttf',
-  variable: '--varela-round'
+const lilitaOne = localFont({
+  src: '../../../public/fonts/LilitaOne-Regular.ttf',
+  variable: '--lilita-one'
 })
 
 export const Layout = ({ children }: LayoutProps): React.ReactElement => {
@@ -29,10 +32,10 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Header /> */}
-      <main className={`${daysOneFont.className} ${varelaRound.className}`}>
-        <div className="w-full min-h-screen bg-indigo-1000 h-100vw px-6 md:px-36 lg:px-56 flex flex-col">
-          {children}
-        </div>
+      <main
+        className={`${lilitaOne.variable} ${outfit.className} h-full px-6 md:px-36 lg:px-56 flex flex-col overflow-y-auto`}
+      >
+        {children}
       </main>
     </>
   )
