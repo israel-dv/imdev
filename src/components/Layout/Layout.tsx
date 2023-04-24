@@ -31,12 +31,15 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <meta name="description" content="imdev blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Header /> */}
-      <main
-        className={`${lilitaOne.variable} ${outfit.className} h-full px-6 md:px-36 lg:px-56 flex flex-col overflow-y-auto`}
-      >
-        {children}
-      </main>
+      <div className="h-full flex flex-col">
+        <Header fontFamily={outfit.className} />
+        <main
+          className={`${lilitaOne.variable} ${outfit.className} flex justify-center flex-1`}
+        >
+          <div className="h-full w-full max-w-4xl">{children}</div>
+        </main>
+      </div>
     </>
+    // px-6 md:px-36 lg:px-56 flex flex-col overflow-y-auto
   )
 }

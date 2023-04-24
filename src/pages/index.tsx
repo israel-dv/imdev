@@ -21,15 +21,13 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center">
-          <div className="phone:w-56 phone:h-56 w-96 h-96">
-            <Image
-              src={profilePic}
-              width={400}
-              height={400}
-              alt="israel moreno logo"
-            />
-          </div>
+        <div className="phone:w-56 phone:h-56 md: lg:w-96 lg:h-96">
+          <Image
+            src={profilePic}
+            width={400}
+            height={400}
+            alt="israel moreno logo"
+          />
         </div>
       </div>
       {/* <div className="bg-50vw">
