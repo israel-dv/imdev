@@ -1,7 +1,6 @@
 import { SOCIAL_MEDIA } from '@imdev/utils/constants/socialMedia'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useId } from 'react'
 
 export const AboutMe = () => {
   return (

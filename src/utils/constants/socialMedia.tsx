@@ -1,7 +1,6 @@
 import { Instagram } from '@imdev/components/Icons/Instagram'
 import { Twitter } from '@imdev/components/Icons/Twitter'
 import { SocialMediaProps } from '../types/socialMedia.type'
-import { Tiktok } from '@imdev/components/Icons/Tiktok'
 import { Github } from '@imdev/components/Icons/Github'
 import { Linkedin } from '@imdev/components/Icons/Linkedin'
 
