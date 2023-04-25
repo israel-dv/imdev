@@ -1,4 +1,7 @@
+import { SOCIAL_MEDIA } from '@imdev/utils/constants/socialMedia'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useId } from 'react'
 
 export const AboutMe = () => {
   return (
@@ -29,22 +32,35 @@ export const AboutMe = () => {
         egresado del Instituto Tecnologico de Celaya con Licenciatura en Ing. En
         Sistemas Computacionales.
       </p>
-      <p>
+      <p className="pt-7">
         Pero bueno…. Mas alla de quien soy profesionalmente, soy un joven de 27
         años apasionado por el desarrollo web y movil, me gusta mucho platicar
         con las personas y socializar. Ademas, me gusta mucho el tema del
         crecimiento personal, el estoicismo y todo aquello que puede hacerte una
         persona mas inteligente y fuerte, es por eso que en este espacio
         personal te ire compartiedo mucho contenido sobre las cosas que a lo
-        largo del tiempo he aprendido y puedo aportar. Espero disfrutes el
-        contenido y sea de tu agrado, si lo deseas, puedes contactarme mediante
-        los siguientes medios:
+        largo del tiempo he aprendido y puedo aportar.
       </p>
-      <p>Mis deportes favoritos: MTB 🚵🏻‍♂️ - Crossfit 🏋🏻‍♂️ - Soccer ⚽️</p>
+      <p className="mt-7">
+        Mis deportes favoritos: MTB 🚵🏻‍♂️ - Crossfit 🏋🏻‍♂️ - Soccer ⚽️
+      </p>
       <p>
         Mi TOP 🔝 Libros favoritos 📚: Habitos atomicos 🧠 - El hombre mas rico
         de babilonia 💵 - El hombre en busca del sentido 🚶🏻‍♂️
       </p>
+      <p className="mt-7">
+        Espero disfrutes el contenido y sea de tu agrado, si lo deseas, puedes
+        contactarme mediante los siguientes medios:
+      </p>
+      <ul className="flex justify-center pt-7">
+        {SOCIAL_MEDIA.map((item) => (
+          <li className="mx-2" key={item.socialName}>
+            <Link href={item.url} target="_blank">
+              {item.icon}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
