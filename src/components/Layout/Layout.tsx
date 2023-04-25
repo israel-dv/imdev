@@ -42,6 +42,5 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         </main>
       </div>
     </>
-    // px-6 md:px-36 lg:px-56 flex flex-col overflow-y-auto
   )
 }
