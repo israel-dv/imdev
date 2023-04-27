@@ -9,8 +9,11 @@ type LayoutProps = {
 }
 
 const outfit = localFont({
-  src: '../../../public/fonts/Outfit-Regular.ttf',
-  variable: '---outfit'
+  src: [
+    { path: '../../../public/fonts/Outfit-Black.ttf', weight: '700' },
+    { path: '../../../public/fonts/Outfit-Regular.ttf', weight: '400' }
+  ],
+  variable: '--outfit'
 })
 
 const lilitaOne = localFont({
@@ -19,6 +22,7 @@ const lilitaOne = localFont({
 })
 
 export const Layout = ({ children }: LayoutProps): React.ReactElement => {
+  console.log(outfit)
   return (
     <>
       <Head>

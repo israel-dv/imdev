@@ -32,7 +32,7 @@ export const Header = ({ fontFamily }: HeaderProps) => {
           return (
             <li
               key={title}
-              className={`mr-4 cursor-pointer font-outfit ${
+              className={`mr-4 cursor-pointer font-outfit font-bold ${
                 router.pathname === path ? 'text-orange-400' : ''
               }`}
             >
