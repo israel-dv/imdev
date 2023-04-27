@@ -9,10 +9,7 @@ type LayoutProps = {
 }
 
 const outfit = localFont({
-  src: [
-    { path: '../../../public/fonts/Outfit-Black.ttf', weight: '700' },
-    { path: '../../../public/fonts/Outfit-Regular.ttf', weight: '400' }
-  ],
+  src: '../../../public/fonts/Outfit-Regular.ttf',
   variable: '---outfit'
 })
 
@@ -36,7 +33,7 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <main
           className={`${lilitaOne.variable} ${outfit.className} flex justify-center flex-1`}
         >
-          <div className="h-full w-full max-w-4xl phone:px-5 lg:px-0 py-4                   ">
+          <div className="h-full w-full max-w-4xl phone:px-5 lg:px-0 py-4">
             {children}
           </div>
         </main>
