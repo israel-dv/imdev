@@ -21,9 +21,9 @@ export const Header = ({ fontFamily }: HeaderProps) => {
 
   return (
     <div
-      className={`${fontFamily} flex w-full h-20 bg-indigo-1100 items-center justify-center px-6 md:px-20 lg:px-32 sticky top-0 border-b-2 border-gray-500 font-semibold`}
+      className={`${fontFamily} flex w-full h-20 bg-indigo-1100 items-center justify-center px-6 md:px-20 lg:px-32 sticky top-0 border-b-2 border-gray-500`}
     >
-      <Link href="/" className="text-xl">
+      <Link href="/" className="text-xl font-outfit-black">
         {'{ imdev }'}
       </Link>
       <div className="border-2 border-gray-400 opacity-80 h-10 rounded-sm m-3"></div>
@@ -32,7 +32,7 @@ export const Header = ({ fontFamily }: HeaderProps) => {
           return (
             <li
               key={title}
-              className={`mr-4 cursor-pointer font-outfit font-bold ${
+              className={`mr-4 cursor-pointer font-outfit ${
                 router.pathname === path ? 'text-orange-400' : ''
               }`}
             >

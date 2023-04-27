@@ -1,28 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
-import localFont from '@next/font/local'
 
 import { Header } from '@imdev/components/Header'
+import { lilitaOne, outfit, outfitBlack } from '@imdev/utils/constants/fonts'
 
 type LayoutProps = {
   children: React.ReactNode
 }
 
-const outfit = localFont({
-  src: [
-    { path: '../../../public/fonts/Outfit-Black.ttf', weight: '700' },
-    { path: '../../../public/fonts/Outfit-Regular.ttf', weight: '400' }
-  ],
-  variable: '--outfit'
-})
-
-const lilitaOne = localFont({
-  src: '../../../public/fonts/LilitaOne-Regular.ttf',
-  variable: '--lilita-one'
-})
-
 export const Layout = ({ children }: LayoutProps): React.ReactElement => {
-  console.log(outfit)
   return (
     <>
       <Head>
@@ -33,7 +19,7 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-full flex flex-col">
-        <Header fontFamily={outfit.className} />
+        <Header fontFamily={outfitBlack.className} />
         <main
           className={`${lilitaOne.variable} ${outfit.className} flex justify-center flex-1`}
         >

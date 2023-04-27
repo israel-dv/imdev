@@ -26,6 +26,7 @@ module.exports = {
       },
       fontFamily: {
         'lilita-one': ['var(--lilita-one)', fontFamily.sans],
+        'outfit-black': ['var(--outfit-black)', fontFamily.sans],
         outfit: ['var(--outfit)', fontFamily.sans]
       },
       screens: {
