@@ -30,25 +30,6 @@ export default function Home() {
           />
         </div>
       </div>
-      {/* <div className="bg-50vw">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-          deserunt provident magnam nihil tenetur repudiandae amet ratione
-          quibusdam, laborum aperiam laboriosam perferendis laudantium sapiente
-          aut animi in repellendus voluptas! Impedit. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Vero quia eligendi dicta quibusdam at
-          soluta libero cumque veritatis aliquam, eum et animi delectus earum
-          impedit magnam necessitatibus adipisci ab reiciendis.
-        </p>
-      </div>
-      <div>
-        <div>Javascript</div>
-        <div>Typescript</div>
-        <div>React</div>
-        <div>React Native</div>
-        <div>Tailwind CSS</div>
-        <div>GraphQL</div>
-      </div> */}
     </div>
   )
 }

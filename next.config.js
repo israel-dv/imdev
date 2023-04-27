@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     domains: ['www.mensjournal.com']
   },
-  pageExtensions: ['ts', 'tsx']
+  pageExtensions: ['page.tsx', 'page.ts', 'tsx', 'ts']
 }
 
 module.exports = nextConfig
