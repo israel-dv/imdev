@@ -23,6 +23,11 @@ export const Header = ({ fontFamily }: HeaderProps) => {
     <div
       className={`${fontFamily} flex w-full h-20 bg-indigo-1100 items-center justify-center px-6 md:px-20 lg:px-32 sticky top-0 border-b-2 border-gray-500`}
     >
+      <div className="h-full w-20 flex flex-col justify-evenly sm:hidden">
+        <div className="h-2 w-full rounded-sm bg-white"></div>
+        <div className="h-2 w-full rounded-sm bg-white"></div>
+        <div className="h-2 w-full rounded-sm bg-white"></div>
+      </div>
       <Link href="/" className="text-xl font-outfit-black">
         {'{ imdev }'}
       </Link>
