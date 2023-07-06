@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         'indigo-1000': 'rgb(43,45,61)',
-        'indigo-1100': 'rgb(37,39,52)'
-
+        'indigo-1100': 'rgb(37,39,52)',
+        'black-16': 'rgb(16,16,16)'
         // 'primary-background': '#041F27'
       },
       height: {

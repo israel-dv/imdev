@@ -18,8 +18,7 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <meta name="description" content="imdev blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="h-full flex flex-col">
-        <Header fontFamily={outfitBlack.className} />
+      <div className="h-full flex flex-col bg-black-16">
         <main
           className={`${lilitaOne.variable} ${outfit.className} flex justify-center flex-1`}
         >

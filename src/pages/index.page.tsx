@@ -4,11 +4,11 @@ import profilePic from '../../public/intro-image.png'
 
 const NAME = 'ISRAEL MORENO'
 const HI = 'Hola ✌🏼! Soy '
-const DESCRIPTION = 'Frontend Engineer 👨🏻‍💻 | Entusiasta 📚'
+const DESCRIPTION = 'Frontend Engineer 👨🏻‍💻 | Alien 👽'
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex">
+    <div className="w-full h-full flex flex-col items-center justify-center">
       <div className="w-full flex items-center justify-center phone:flex-col-reverse lg:flex-row">
         <div className="flex flex-col w-95 items-center lg:items-start">
           <span className="phone:text-xl lg:text-3xl font-outfit">{HI}</span>
@@ -16,7 +16,7 @@ export default function Home() {
             {NAME}
           </h1>
           <div className="flex">
-            <h2 className="font-outfit typing phone:text-xl lg:text-3xl">
+            <h2 className="font-outfit typing phone:text-xl lg:text-3xl text-blue-400">
               {DESCRIPTION}
             </h2>
           </div>
@@ -30,6 +30,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <p className="text-gray-400">
+        Este sitio esta en construcción | This site is under construction
+      </p>
     </div>
   )
 }
