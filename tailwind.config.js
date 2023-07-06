@@ -24,6 +24,9 @@ module.exports = {
         '95vw': '95vw',
         '100vw': '100vw'
       },
+      maxWidth: {
+        '75ch': '75ch'
+      },
       fontFamily: {
         'lilita-one': ['var(--lilita-one)', fontFamily.sans],
         'outfit-black': ['var(--outfit-black)', fontFamily.sans],

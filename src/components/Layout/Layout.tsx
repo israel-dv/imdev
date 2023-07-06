@@ -18,15 +18,13 @@ export const Layout = ({ children }: LayoutProps): React.ReactElement => {
         <meta name="description" content="imdev blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="h-full flex flex-col bg-black-16">
-        <main
-          className={`${lilitaOne.variable} ${outfit.className} flex justify-center flex-1`}
-        >
-          <div className="h-full w-full max-w-4xl phone:px-5 lg:px-0 py-4">
-            {children}
-          </div>
-        </main>
-      </div>
+      <main
+        className={`${lilitaOne.variable} ${outfit.variable} flex justify-center flex-1 bg-black-16 h-full`}
+      >
+        <div className="h-full w-full max-w-4xl phone:px-5 lg:px-0 py-4">
+          {children}
+        </div>
+      </main>
     </>
   )
 }

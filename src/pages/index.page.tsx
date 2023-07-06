@@ -30,7 +30,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <p className="text-gray-400">
+      <p className="text-gray-400 font-outfit mt-8 text-center">
         Este sitio esta en construcción | This site is under construction
       </p>
     </div>
